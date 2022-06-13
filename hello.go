@@ -1,7 +1,12 @@
 package main
 
+const namePrefix = "Hello,"
+
 func Hello(input string) string {
-	return "Hello," + input
+	if input == "" {
+		input = "World"
+	}
+	return namePrefix + input
 }
 
 func main() {
